@@ -2,7 +2,6 @@
 go_version: 1.15.7
 golang_shell_profile: /home/pessman/.bashrc
 go_install_clean: true
-go_reget: true
 go_get:
 - name: gopkgs
   url: github.com/uudashr/gopkgs/v2/cmd/gopkgs
@@ -22,3 +21,7 @@ go_get:
   url: golang.org/x/lint/golint
 - name: gopls
   url: golang.org/x/tools/gopls
+- name: go-protobuf
+  url: google.golang.org/protobuf/cmd/protoc-gen-go
+- name: go-grpc
+  url: google.golang.org/grpc/cmd/protoc-gen-go-grpc

@@ -1,0 +1,7 @@
+---
+- name: "Install protoc"
+  apt:
+    name: protobuf-compiler
+    update_cache: yes
+    state: present
+  become: yes

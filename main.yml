@@ -25,3 +25,7 @@
   - role: gantsign.postman
   # Install Docker
   - role: geerlingguy.docker
+
+  tasks:
+  - name: "Include Protoc Tasks"
+    include_tasks: tasks/protoc/main.yml
