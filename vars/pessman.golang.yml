@@ -2,3 +2,23 @@
 go_version: 1.15.7
 golang_shell_profile: /home/pessman/.bashrc
 go_install_clean: true
+go_reget: true
+go_get:
+- name: gopkgs
+  url: github.com/uudashr/gopkgs/v2/cmd/gopkgs
+- name: go-outline
+  url: github.com/ramya-rao-a/go-outline
+- name: gotests
+  url: github.com/cweill/gotests/...
+- name: gomodifytags
+  url: github.com/fatih/gomodifytags
+- name: impl
+  url: github.com/josharian/impl
+- name: goplay
+  url: github.com/haya14busa/goplay/cmd/goplay
+- name: dlv
+  url: github.com/go-delve/delve/cmd/dlv
+- name: golint
+  url: golang.org/x/lint/golint
+- name: gopls
+  url: golang.org/x/tools/gopls

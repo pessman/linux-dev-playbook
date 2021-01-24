@@ -4,3 +4,4 @@
 - name: geerlingguy.nodejs
 - name: gantsign.visual-studio-code
 - name: gantsign.postman
+- name: geerlingguy.docker

@@ -5,6 +5,7 @@
   - vars/pessman.golang.yml
   - vars/geerlingguy.nodejs.yml
   - vars/gantsign.visual-studio-code.yml
+  - vars/geerlingguy.docker.yml
 
   pre_tasks:
   - name: "Include Ubuntu Prep Steps"
@@ -22,3 +23,5 @@
   - role: gantsign.visual-studio-code
   # Install Postman
   - role: gantsign.postman
+  # Install Docker
+  - role: geerlingguy.docker
