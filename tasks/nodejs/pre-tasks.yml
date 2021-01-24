@@ -1,0 +1,16 @@
+---
+- name: Get Apt Package Facts
+  package_facts:
+    manager: "auto"
+
+- name: Set Node Version String
+  set_fact:
+    node_version_string: "{{ nodejs_version|string|regex_replace('x', '') }}"
+
+- name: Remove Existing
+  apt:
+    name: nodejs
+    state: absent
+  when: node_version_string not in ansible_facts.packages['nodejs'][0].version
+  ignore_errors: yes
+  become: yes

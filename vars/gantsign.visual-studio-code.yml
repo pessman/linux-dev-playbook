@@ -1,0 +1,16 @@
+---
+users:
+  - username: pessman
+    visual_studio_code_extensions:
+    - golang.go
+    - ms-python.python
+    - pkief.material-icon-theme
+    - redhat.vscode-yaml
+    - davidanson.vscode-markdownlint
+    visual_studio_code_settings_overwrite: yes
+    visual_studio_code_settings: {
+      "editor.renderWhitespace": "boundary",
+      "files.trimTrailingWhitespace": true,
+      "workbench.iconTheme": "material-icon-theme",
+      "go.useLanguageServer": true
+    }

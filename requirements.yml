@@ -1,0 +1,6 @@
+---
+- src: https://github.com/pessman/ansible-role-golang
+  name: pessman.golang
+- name: geerlingguy.nodejs
+- name: gantsign.visual-studio-code
+- name: gantsign.postman

@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+
+  vars_files:
+  - vars/pessman.golang.yml
+  - vars/geerlingguy.nodejs.yml
+  - vars/gantsign.visual-studio-code.yml
+
+  pre_tasks:
+  - name: "Include Ubuntu Prep Steps"
+    include_tasks: tasks/apt-update.yml
+  - name: "Include Node Prep Steps"
+    include_tasks: tasks/nodejs/pre-tasks.yml
+
+  roles:
+  # Install NodeJS and NPM
+  - role: geerlingguy.nodejs
+    become: yes
+  # Install Go
+  - role: pessman.golang
+  # Install VSCode
+  - role: gantsign.visual-studio-code
+  # Install Postman
+  - role: gantsign.postman

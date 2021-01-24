@@ -1,0 +1,4 @@
+---
+go_version: 1.15.7
+golang_shell_profile: /home/pessman/.bashrc
+go_install_clean: true
